@@ -1,0 +1,98 @@
+.phienForm {
+  width: 320px;
+  border: 1px solid $light;
+  background-color: white;
+  height: 100%;
+
+  .phien__head {
+    width: 100%;
+    height: 60px;
+    background-color: $heading;
+    padding: 17px 0px 18px 22px;
+    display: flex;
+    border-bottom: 5px solid $red;
+    color: $blue;
+    font-weight: 600;
+  }
+  .phien__row {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    padding: 10px 10px 10px 15px;
+    border-bottom: 1px solid $light;
+    position: relative;
+
+    .row__image {
+      justify-self: center;
+      align-self: center;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .row__content {
+      padding-left: 10px;
+
+      h4 {
+        font-size: 16px;
+        font-family: "Oswald", sans-serif;
+      }
+      span {
+        display: block;
+        font-size: 13px;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+    .x {
+      position: absolute;
+      right: 10%;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) and (min-width: 321px) {
+  .phienForm {
+    width: 360px !important;
+    .x {
+      margin-left: 30%;
+    }
+  }
+}
+@media only screen and (max-width: 375px) and (min-width: 361px) {
+  .phienForm {
+    width: 375px !important;
+    .x {
+      margin-left: 33%;
+    }
+  }
+}
+@media only screen and (max-width: 406px) and (min-width: 376px) {
+  .phienForm {
+    width: 406px !important;
+  }
+}
+@media only screen and (max-width: 411px) and (min-width: 407px) {
+  .phienForm {
+    width: 411px;
+    .x {
+      margin-left: 39%;
+    }
+  }
+}
+@media only screen and (max-width: 415px) and (min-width: 412px) {
+  .phienForm {
+    width: 414px;
+    .x {
+      margin-left: 39%;
+    }
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 240px) {
+  .phienForm {
+    width: 320px !important;
+    .x {
+      margin-left: 20%;
+    }
+  }
+}

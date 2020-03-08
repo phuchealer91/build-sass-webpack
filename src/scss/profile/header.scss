@@ -1,0 +1,413 @@
+.profile__header {
+  margin: 0px auto;
+  height: 385px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  padding: 10px 0px;
+  position: relative;
+
+  .user__cover,
+ 
+  .avata--edit {
+    width: 110px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 3px;
+    padding-left: 15px;
+    border: 1px solid $west-border;
+    color: $white;
+    cursor: pointer;
+    position: relative;
+    font-size: 13px;
+    margin-left: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    .icon {
+      align-self: center;
+      position: relative;
+      z-index: 10;
+      color: $white;
+    }
+
+    .text__edit {
+      position: relative;
+      z-index: 10;
+      color: $white;
+      padding-left: 5px;
+      cursor: pointer;
+    }
+
+    #upload__cover {
+      opacity: 0;
+      position: absolute;
+      overflow: visible;
+      left: 0px;
+    }
+
+    #upload__avatar {
+      opacity: 0;
+      position: absolute;
+      overflow: visible;
+      left: 0px;
+      cursor: pointer;
+    }
+
+    .cover__box,
+    .avata__box {
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      background: $west;
+      opacity: 0.3;
+      z-index: 1;
+      left: 0;
+      cursor: pointer;
+    }
+  }
+
+  .box--edit {
+    height: 360px;
+  }
+
+  .user__info {
+    position: absolute;
+    height: 160px;
+    bottom: 0px;
+    margin-left: 50px;
+
+    .user__info__box {
+      display: grid;
+      grid-template-columns: 125px 1fr;
+      grid-template-rows: 1fr;
+
+      .avata {
+        width: 110px;
+        height: 110px;
+        margin: 0px;
+        border-radius: 10px;
+        box-shadow: 1px 0px 6px $west-border;
+        background: #fff;
+        position: relative;
+        background-size: 100% 100%;
+        border: 2px solid $white;
+
+        .avata--edit {
+          position: absolute;
+          bottom: 0;
+          margin: 5px 5%;
+          width: 50px;
+          height: 28px;
+          overflow: hidden;
+
+          .icon {
+            justify-self: center;
+          }
+        }
+      }
+
+      .info {
+   
+        align-self: end;
+        // padding-top: 60px;
+        // padding-left: 5px;
+
+        .info__name {
+          font-size: 20px;
+          font-weight: bold;
+          text-shadow: 1px 1px 5px $black;
+          letter-spacing: 3px;
+          color: $white;
+      
+        }
+
+        .info__another {
+          font-size: 16px;
+          color: $white;
+          font-weight: 600;
+          text-shadow: 1px 1px 5px $west;
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) and (min-width: 240px) {
+  .profile__header {
+    width: 320px;
+    margin: 0px auto;
+    height: 145px;
+
+    .user__cover {
+      float: right;
+      margin-right: 15px;
+
+      .text__edit {
+        #upload__cover {
+          width: 68px;
+        }
+      }
+    }
+
+    .user__info {
+      margin-left: 15px;
+      height: 100px;
+      .user__info__box {
+        grid-template-columns: 1fr 2fr;
+
+        .avata {
+          width: 85px;
+          height: 85px;
+
+          .avata--edit {
+            padding-left: 0px;
+            grid-template-columns: 1fr;
+            .icon {
+              justify-self: center;
+            }
+          }
+        }
+
+        .info {
+          padding-top: 40px;
+          padding-left: 10px;
+
+          .info__name {
+            font-size: 18px;
+          }
+
+          .info__another {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  .profile__header .mobile {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 375px) and (min-width: 321px) {
+  .profile__header {
+    width: 375px;
+    margin: 0px auto;
+    height: 145px;
+
+    .user__cover {
+      float: right;
+      margin-right: 15px;
+
+      .text__edit {
+        #upload__cover {
+          width: 68px;
+        }
+      }
+    }
+
+    .user__info {
+      margin-left: 15px;
+      height: 100px;
+      .user__info__box {
+        grid-template-columns: 1fr 2fr;
+
+        .avata {
+          width: 85px;
+          height: 85px;
+
+          .avata--edit {
+            padding-left: 0px;
+            grid-template-columns: 1fr;
+            .icon {
+              justify-self: center;
+            }
+          }
+        }
+
+        .info {
+          padding-top: 40px;
+          padding-left: 15px;
+
+          .info__name {
+            font-size: 18px;
+          }
+
+          .info__another {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 376px) {
+  .profile__header {
+    width: 100%;
+    margin: 0px auto;
+    height: 145px;
+
+    .user__cover {
+      float: right;
+      margin-right: 15px;
+
+      .text__edit {
+        #upload__cover {
+          width: 68px;
+        }
+      }
+    }
+
+    .user__info {
+      margin-left: 15px;
+      height: 100px;
+      .user__info__box {
+        grid-template-columns: 1fr 2fr;
+
+        .avata {
+          width: 85px;
+          height: 85px;
+
+          .avata--edit {
+            padding-left: 0px;
+            grid-template-columns: 1fr;
+            .icon {
+              justify-self: center;
+            }
+          }
+        }
+
+        .info {
+          padding-top: 40px;
+          padding-left: 15px;
+
+          .info__name {
+            font-size: 18px;
+          }
+
+          .info__another {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  .profile__header {
+    width: 768px;
+    margin: 0px auto;
+    height: 268px;
+
+    .user__cover {
+      float: right;
+      margin-right: 15px;
+
+      .text__edit {
+        #upload__cover {
+          width: 68px;
+        }
+      }
+    }
+
+    .user__info {
+      margin-left: 15px;
+      height: 130px;
+      .user__info__box {
+        grid-template-columns: 1fr 2fr;
+
+        .avata {
+          width: 110px;
+          height: 110px;
+
+          .avata--edit {
+            padding-left: 0px;
+            grid-template-columns: 1fr;
+            .icon {
+              justify-self: center;
+            }
+          }
+        }
+
+        .info {
+          padding-top: 40px;
+          padding-left: 15px;
+
+          .info__name {
+            font-size: 18px;
+          }
+
+          .info__another {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .profile__header {
+    width: 1024px;
+    margin: 0px auto;
+    height: 268px;
+
+    .user__cover {
+      float: right;
+      margin-right: 15px;
+
+      .text__edit {
+        #upload__cover {
+          width: 68px;
+        }
+      }
+    }
+
+    .user__info {
+      margin-left: 15px;
+      height: 130px;
+      .user__info__box {
+        grid-template-columns: 1fr 2fr;
+
+        .avata {
+          width: 110px;
+          height: 110px;
+
+          .avata--edit {
+            padding-left: 0px;
+            grid-template-columns: 1fr;
+            .icon {
+              justify-self: center;
+            }
+          }
+        }
+
+        .info {
+          padding-top: 40px;
+          padding-left: 15px;
+
+          .info__name {
+            font-size: 18px;
+          }
+
+          .info__another {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .profile__header {
+    width: $max-width-desktop;
+  }
+}

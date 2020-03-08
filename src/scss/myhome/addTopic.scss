@@ -1,0 +1,89 @@
+.modal-dialog--addtopic {
+    .modal-title--add-topic {
+        font-weight: bold;
+    }
+    .form-add-topic {
+        .form-add-topic__field {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 14px 0;
+            border-bottom: 1px solid #E6E6E6;
+            .name {
+                flex: 0 0 25%;
+                max-width: 25%;
+                font-size: 14px;
+                padding: 0 10px 0 0;
+            }
+    
+            .input-content {
+                flex: 0 0 75%;
+                max-width: 75%;
+                margin: 0;
+
+                input {
+                    height: 35px;
+                    &::placeholder {
+                        font-size: 14px;
+                    }
+                }
+
+                textarea::placeholder {
+                    font-size: 14px;
+                }
+                select {
+                    height: 35px;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+                .change-topic {
+                    font-weight: bold;
+                    border: none;
+                    border-radius: 3px;
+                    padding: 3px 8px;
+                    font-size: 14px;
+                    color: #404040;
+                }
+
+                &--invite-follow {
+                    flex: 0 0 60%;
+                    max-width: 60%;
+
+                    .info {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-top: 10px;
+
+                        .image {
+                            border-radius: 50px;
+                        }
+                    }
+                }
+            }
+
+            .invite {
+                flex: 0 0 15%;
+                max-width: 15%;
+                padding-left: 5px;
+
+                .invite-button {
+                    border: none;
+                    border-radius: 3px;
+                    padding: 3px 8px;
+                }
+            }
+        }
+    }
+
+    .add-topic__action {
+        .cancel {
+            font-size: 14px;
+            border: none;
+        }
+        .save {
+            font-size: 14px;
+            background: #A54646;
+            border: none;
+        }
+    }
+}

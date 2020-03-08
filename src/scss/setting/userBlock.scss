@@ -1,0 +1,114 @@
+.bl__form{
+
+    width: 320px;
+    border: 1px solid $light;
+    padding-bottom: 20px;
+    background-color: white; 
+    height: 100%;
+
+    .bl__form__head{
+
+        width: 100%;
+        height: 60px;
+        background-color: $heading;
+        padding: 17px 0px 18px 22px;
+        display: flex;
+        border-bottom: 5px solid $red;
+        color: $blue;
+        font-weight: 600;
+    }
+    .bl__form__row{
+
+        padding: 10px 10px 0 15px;
+        display: flex;
+        border-bottom: 1px solid $light;
+        position: relative;
+        img{
+            width: 60px;
+            height: 60px;
+        }
+
+        .bl__info{
+
+            padding: 15px 0 15px 15px;
+
+            span{
+                display: block;
+                font-size: 16px;
+                font-family: "Roboto",sans-serif;
+
+                &:last-child{
+                    font-size: 14px;
+                    margin-top: 3px;
+                }
+            }
+        }
+
+        .bl__btn--des{
+
+            padding: 15px 0 15px 15px;
+            position: absolute;
+            right: 5%;
+            
+            input{
+                position: relative;
+                border-radius: 5px;
+                padding: 7px 7px 7px 30px;
+                background-color: $red;
+                font-size: 14px;
+                color: white;
+                border: 1px solid $red;
+            }
+            .bl__icon--des{
+                position: absolute;
+                margin: 10px 0px 0px -89px;
+                filter: invert(1);
+            }
+        }
+    }
+}
+@media only screen and (max-width: 360px) and (min-width: 321px){
+    .bl__form{
+        width: 360px !important; 
+        .x{
+            margin-left: 30%;
+        }
+    }
+}
+@media only screen and (max-width: 375px)  and (min-width: 361px){
+    .bl__form{
+        width: 375px !important; 
+        .x{
+            margin-left: 33%;
+        }
+    }
+}
+@media only screen and (max-width: 406px) and (min-width: 376px){
+    .bl__form{
+        width: 406px !important; 
+    }
+}
+@media only screen and (max-width: 411px) and (min-width: 407px){
+    .bl__form{
+        width: 411px; 
+        .x{
+            margin-left: 39%;
+        }
+    }
+}
+@media only screen and (max-width: 415px) and (min-width: 412px){
+    .bl__form{
+        width: 414px; 
+        .x{
+            margin-left: 39%;
+        }
+    }
+}
+@media only screen and (max-width: 320px) and (min-width: 240px){
+    .bl__form{
+        width: 320px !important; 
+        .x{
+            margin-left: 20%;
+        }
+    }
+}

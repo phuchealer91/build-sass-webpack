@@ -1,0 +1,144 @@
+.desktop {
+  .profile__nav {
+    position: relative;
+    width: 100%;
+    top: -30px;
+    padding-top: 10px;
+
+    .nav__box {
+      background: $white;
+      width: 950px;
+      box-shadow: 1px 0px 6px $west;
+      margin: 0px auto;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      justify-content: space-around;
+      // display: grid;
+      // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      // grid-template-rows: 1fr;
+
+      .nav__item {
+        width: 100%;
+
+        justify-self: center;
+        align-self: center;
+        border-bottom: 3px solid $white;
+
+        &:hover {
+          // background: $west-2;
+          border-bottom: 3px solid $red;
+        }
+        a {
+          padding-top: 10px;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-gap: 10px;
+          color: $west;
+          font-weight: bold;
+          span {
+            justify-self: center;
+            align-self: end;
+            display: inline-block;
+            height: 40px;
+          }
+
+          .icon {
+            width: 30px !important;
+            height: 30px !important;
+          }
+
+          .nav__text {
+            align-self: end;
+            height: 30px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mobile {
+  .profile__nav {
+    position: relative;
+    width: 100%;
+    top: 100%;
+    margin-bottom: 10px;
+    .nav__box {
+      background: $white;
+      width: 100%;
+      box-shadow: 1px 0px 6px $west;
+      margin: 0px auto;
+      border-radius: 5px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      // justify-content: space-around;
+      // display: grid;
+      // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      // grid-template-rows: 1fr;
+
+      .nav__item {
+        width: 100%;
+        padding-top: 10px;
+        justify-self: center;
+        align-self: center;
+        border-bottom: 3px solid $white;
+
+        &:hover {
+          // background: $west-2;
+          border-bottom: 3px solid $red;
+          background: $light;
+        }
+
+        a {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr;
+          color: $west;
+          font-weight: bold;
+          font-size: 14px;
+          span {
+            justify-self: center;
+            align-self: end;
+            display: inline-block;
+            height: 40px;
+          }
+
+          .icon {
+            width: 30px !important;
+            height: 30px !important;
+          }
+
+          .nav__text {
+            align-self: end;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 240px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}

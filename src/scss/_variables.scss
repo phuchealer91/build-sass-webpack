@@ -1,0 +1,225 @@
+$black: #333333;
+$white: #ffffff;
+$light: #f1f2f2;
+$west: #333333;
+$red: #a54646;
+$blue: #3b5998;
+$green: #4caf50;
+$lightblue: #70a1ff;
+$hover: rgb(194, 197, 201);
+$heading: #e0e0e0;
+//#f2f3f5;
+// opaciti color
+$west-1: #404040 !default;
+$west-2: #808080 !default;
+$west-3: #00000029;
+$west-4: rgba(33, 37, 41, 0.2);
+$west-5: rgba(51, 51, 51, 0.2);
+$west-border: rgba(230, 230, 230, 0.4);
+
+$back-1: rgba(0, 0, 0, 0.6);
+$blue-1: #374370 !default;
+
+//
+$font-1: "Open Sans", sans-serif;
+$font-2: "Open Sans", sans-serif;
+
+//font-size
+$font-10: 10px !default;
+$font-12: 12px !default;
+$font-14: 14px !default;
+$font-16: 16px !default;
+$font-18: 18px !default;
+$font-20: 20px !default;
+$font-28: 28px !default;
+
+// font-bold
+
+//font-shadow
+$box-1: rgba(0, 0, 0, 0.16) 0px 3px 8px;
+$box-2: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+$box-3: rgba(0, 0, 0, 0.16) 0px 1px 3px;
+
+//font-height-_type
+$height-0: 48px;
+$height-1: 60px;
+$height-2: 100px;
+
+//width size website
+$width-1020: 1020px;
+$width-480: 480px;
+$max-width-desktop: 1170px;
+
+.font--bold {
+  font-weight: bold;
+}
+
+.pr-15 {
+  padding-right: 15px !important;
+}
+
+.pt-20 {
+  padding-top: 20px !important;
+}
+
+.pr-20 {
+  padding-right: 20px !important;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-body {
+  padding: 0px !important;
+}
+
+.link {
+  color: $blue !important;
+  font-weight: 700;
+  vertical-align: middle;
+  cursor: pointer;
+}
+// custom checkbox
+
+
+.p-30 {
+  padding: 30px;
+}
+
+
+.m-10 {
+  margin: 10px;
+}
+
+.infinite-loading-container {
+  padding: 10px;
+}
+
+.filepond--root {
+  background: #f1f1f1;
+  min-height: 125px;
+  margin-bottom: 0px !important;
+}
+.filepond--panel-root {
+  background-color: transparent !important;
+}
+
+.validate--error {
+  padding: 5px 15px;
+  color: $red;
+  font-size: 13px;
+}
+
+
+.ql-editor {
+  min-height: 240px;
+  box-shadow: 0px 0px 0px $west-1 !important;
+  border: 1px solid #e8e8e8 !important;
+}
+
+
+
+//vue  multi select
+.multiselect__tags {
+  padding: 5px 36px 0 8px;
+  margin-top: 5px;
+}
+
+.option__image {
+  width: 80px;
+  max-height: 65px;
+  margin-right: 10px;
+}
+
+.option__desc,
+.option__image {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+// multi  step
+
+#modal-multi-step {
+  z-index: 9999;
+  margin-top: 30px;
+}
+
+.wizard-header {
+  padding-top: 10px !important;
+}
+.vue-form-wizard .wizard-tab-content {
+  min-height: 100px;
+  padding: 0px 20px 10px !important;
+}
+.topic__box {
+  overflow: scroll;
+  padding-bottom: 20px;
+}
+
+.label__step {
+  margin-top: 10px;
+}
+
+
+
+/* custom properties (AKA css variables) */
+
+.item__user__action {
+  position: absolute;
+  right: 0px;
+  padding-right: 5px;
+  text-align: right;
+
+  .action__list {
+    min-width: 140px;
+  }
+
+  .icon {
+    height: 13px !important;
+    width: 13px;
+  }
+}
+
+/* */
+.si {
+  --color-label: #9aa6bf;
+  // --color-default: #dee5f2;
+  --color-default: black;
+  // --color-active: #0069ff;
+  --color-active: black;
+  --rotate-default: 180deg;
+  --rotate-active: 40deg;
+  --border-size-checkmark: 2px;
+  --border-size-box: 2px;
+  --input-size: 20px;
+  --guter: 15px;
+  margin: 0;
+}
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  padding-top: 82px;
+}
+
+
+
+.tab-pane {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #eee;
+}
+
+/* basic reset */

@@ -1,0 +1,64 @@
+  #header {
+    background: $west-1;
+    padding: 15px 20px;
+    min-height: 60px;
+  }
+  
+  .apha--header {
+    /* with: 1028px; */
+    margin: 0px auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+
+    /* header left */
+    &a {
+      text-decoration: none;
+    }
+
+    &--logo {
+      position: relative;
+
+      img {
+        width: 150px;
+        height: 20px;
+        position: absolute;
+        top: 25%;
+      }
+     
+    }
+     /* header right */
+
+    &--button {
+
+       a {
+
+          color: $white;
+          border: 1px solid $white;
+          border-radius: 3px;
+          display: block;
+          width: 105px;
+          height: 32px;
+          line-height: 32px;
+          text-align: center;
+
+          &:hover {
+            background: $red;
+            text-decoration: none;
+          }
+
+       } 
+
+      }
+  }
+
+
+  
+  @media only screen and (max-width: 414px) {
+  
+  }
+  
+  @media only screen and (max-width: 1020px) {
+
+  }

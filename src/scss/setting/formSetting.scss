@@ -1,0 +1,81 @@
+.info--error {
+  color: red;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 13px;
+}
+
+.setting__form {
+  width: 320px;
+  border: 1px solid $light;
+  padding-bottom: 25px;
+  background-color: white;
+
+  a {
+    color: black !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .setting__setting {
+    width: 100%;
+    height: 60px;
+    background-color: $heading;
+    padding: 17px 0px 18px 22px;
+    display: flex;
+    border-top: 5px solid $red;
+
+    .setting__text {
+      font-family: "Oswald", sans-serif;
+      font-size: 13px;
+      margin-left: 5px;
+      margin-top: 1px;
+    }
+  }
+
+  .setting__row {
+    width: 100%;
+    height: 50px;
+    padding: 17px 0px 18px 22px;
+    display: flex;
+    &:hover {
+      background-color: $hover;
+    }
+    span {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      opacity: 0.9;
+      margin-left: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 360px) and (min-width: 321px) {
+  .setting__form {
+    width: 360px !important;
+  }
+}
+@media only screen and (max-width: 375px) and (min-width: 361px) {
+  .setting__form {
+    width: 375px !important;
+  }
+}
+@media only screen and (max-width: 406px) and (min-width: 376px) {
+  .setting__form {
+    width: 406px !important;
+  }
+}
+@media only screen and (max-width: 411px) and (min-width: 407px) {
+  .setting__form {
+    width: 411px;
+  }
+}
+@media only screen and (max-width: 415px) and (min-width: 412px) {
+  .setting__form {
+    width: 414px;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 240px) {
+  .setting__form {
+    width: 320px !important;
+  }
+}

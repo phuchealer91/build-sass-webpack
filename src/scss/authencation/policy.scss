@@ -1,0 +1,29 @@
+
+.policy {
+    text-align: center;
+    padding-bottom:  15px;
+
+    &--item {
+        display: inline-block;
+        margin: 0px 15px;
+        color: #fff;
+    }
+}
+
+
+#page--forget--password > .policy {
+    margin-top: 30px;
+} 
+
+
+@media only screen and (max-width: 414px) {
+    #page--forget--password .policy {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 1020px) {
+    #page--forget--password  .policy {
+        margin-top: 220px;
+    }
+}

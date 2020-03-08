@@ -1,0 +1,88 @@
+
+.box__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+.box__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 0px;
+}
+
+.box__top__label {
+    align-self: end;
+    font-size: 16px;
+    color: $blue;
+    font-weight: bold;
+}
+
+.top__search{
+    align-self: center;
+    justify-self: end;
+}
+
+.top__search__input {
+    width: 220px;
+    padding-left: 10px;
+    height: 32px;
+    border: none;
+    box-shadow: 1px 0px 3px #eee;
+    border-radius: 3px;
+}
+
+.search__input {
+    padding-left: 15px;
+    font-size: 13px;
+    color: $west-1;
+}
+
+.box__item {
+    width: 100%;
+}
+
+.box__card {
+padding: 20px;
+background: $white;
+text-align: center;
+border-radius: 3px;
+box-shadow: 1px 0px 6px #eaeaea;
+}
+
+.box__card__img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.box__card__title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 20px auto 10px auto;
+}
+
+.box__card__text {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #808080;
+}
+
+.box__card__text span {
+    font-weight: bold;
+    color: #000;
+}
+
+.box__card__button {
+    margin: 0px auto;
+    min-width: 85px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.box__card__button:hover {
+      color: #fff;
+}
